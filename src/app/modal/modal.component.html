@@ -1,0 +1,11 @@
+<h2>{{ data.movieDetail.Title }}</h2>
+<mat-divider></mat-divider>
+<img src="{{ data.movieDetail.Poster }}" alt="" />
+<div class="text-center">
+  <a
+    class="btn btn-secondary mt-2"
+    [routerLink]="['detail/', data.movieDetail.imdbID]"
+    (click)="closeDialog()"
+    >Detail</a
+  >
+</div>

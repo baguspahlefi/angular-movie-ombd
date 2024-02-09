@@ -11,6 +11,8 @@
           [src]="getMovieDetail.Poster"
           class="mx-auto"
           alt="{{ getMovieDetail.Title }}"
+          data-bs-toggle="modal" 
+          data-bs-target="#exampleModal"
         />
       </div>
       <div class="col-md-6">
@@ -52,3 +54,12 @@
     </div>
   </ng-template>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <img src="{{getMovieDetail.Poster}}" alt="">
+  </div>
+</div>
+
